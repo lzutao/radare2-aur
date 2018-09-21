@@ -1,0 +1,21 @@
+pkgbase = radare2-latest
+        pkgdesc = Advanced commandline hexadecimal editor, disassembler and debugger
+        pkgver = 2.9.0.r171.g555385030
+        pkgrel = 1
+        url = http://www.radare.org/
+        arch = x86_64
+        license = LGPL3
+        makedepends = git
+        depends = capstone
+        depends = openssl
+        depends = libzip
+        optdepends = libuv
+        optdepends = gmp
+        provides = radare2
+        conflicts = radare2
+        options = !libtool
+        source = radare2-latest-2.9.0.r171.g555385030::git://github.com/radare/radare2.git
+        md5sums = SKIP
+
+pkgname = radare2-latest
+
