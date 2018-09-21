@@ -13,8 +13,8 @@ depends=(
 )
 makedepends=('git')
 optdepends=(
-  'libuv'
-  'gmp'
+  'libuv: asynchronous I/O support'
+  'gmp: arbitrary precision arithmetic support'
 )
 provides=('radare2')
 conflicts=('radare2')
@@ -30,7 +30,7 @@ pkgver() {
 
 build() {
   cd "${pkgname}-${pkgver}"
-  ./sys/build.sh
+  ./sys/build.sh --with-syscapstone
 }
 
 package() {
