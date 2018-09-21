@@ -30,7 +30,7 @@ pkgver() {
 
 build() {
   cd "${pkgname}-${pkgver}"
-  ./sys/build.sh --prefix=/usr --with-syscapstone
+  ./sys/build.sh --with-syscapstone /usr
 }
 
 package() {
